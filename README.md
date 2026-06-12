@@ -113,21 +113,19 @@ Relacionamento:
 
 ### Tela Inicial
 
-
-
+## ![Texto alternativo](quarto.png)
 
 ### Tela de Cadastro de Quartos
 
-
-
+## ![Texto alternativo](quartomodal.png)
 
 ### Tela de Reservas
 
-
+## ![Texto alternativo](reserva.png)
 
 ### Tela de Listagem
 
-Inserir print da listagem de quartos e reservas.
+## ![Texto alternativo](reservamodal.png)
 
 ## 6. Passo a Passo para Execução do Projeto
 
