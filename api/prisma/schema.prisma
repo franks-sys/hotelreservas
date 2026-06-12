@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model quarto {
+  id        Int       @id @default(autoincrement())
+  numero    String    @db.VarChar(10)
+  tipo      String    @db.VarChar(50)
+  reservas  reserva[]
+}
+
+model reserva {
+  id           Int    @id @default(autoincrement())
+  hospede      String   @db.VarChar(100)
+  data_entrada DateTime
+  data_saida   DateTime
+  quartoId     Int
+  quarto       quarto   @relation(fields: [quartoId], references: [id])
+}

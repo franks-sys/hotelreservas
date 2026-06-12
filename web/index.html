@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Pavan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <h2>Nosso Hotel</h2>
+    </div>
+    <div class="nav-links">
+      <a class="active" href="#">Quartos</a>
+      <a href="reservas.html">Reservas</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <main class="content">
+
+      <header class="topbar">
+        <h1>Quartos Cadastrados</h1>
+        <button class="btn-primary" onclick="abrirModalQuarto()">+ Novo Quarto</button>
+      </header>
+
+      <section class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>Nº Quarto</th>
+              <th>Tipo</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-quartos"></tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+  <div class="modal" id="modal-quarto">
+    <div class="modal-box">
+      <h2>Cadastrar Quarto</h2>
+      <input type="text" id="numero" placeholder="Número do quarto">
+      <input type="text" id="tipo" placeholder="Tipo do quarto">
+      <div class="modal-actions">
+        <button class="btn-gray" onclick="fecharModalQuarto()">Cancelar</button>
+        <button class="btn-primary" onclick="criarQuarto()">Salvar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
