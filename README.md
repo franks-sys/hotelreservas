@@ -182,19 +182,3 @@ node src/server.js
 ### 8. Executar o Front-end
 
 Abrir o arquivo `index.html` em um navegador ou utilizar a extensão Live Server do Visual Studio Code.
-
-## 7. Funcionalidades Implementadas
-
-* Cadastro de quartos.
-* Consulta de quartos.
-* Cadastro de reservas.
-* Consulta de reservas.
-* Exclusão de registros.
-* Integração entre front-end e back-end.
-* Persistência de dados utilizando MySQL e Prisma ORM.
-
-## 8. Autor
-
-Francisco Paula
-
-GitHub: https://github.com/franks-sys/hotelreservas
